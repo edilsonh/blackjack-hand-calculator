@@ -10,7 +10,7 @@
 
   // Blackjack Hand Tests
   // Hand, Value
-  assert(["2", "2", "8"], 12);
+  assert(["2",], 2);
   assert(["2", "2", "K"], 14);
   assert(["2", "Q"], 12);
   assert(["7", "J"], 17);

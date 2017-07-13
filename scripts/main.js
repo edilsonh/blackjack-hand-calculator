@@ -10,10 +10,10 @@
 */
 
 
+// cards #=> ["2"]
 function handValue (cards) {
   let totalValue = 0;
-  // cards #=> ["2"]
-  totalValue = parseInt(cards[0]) + totalValue
+  totalValue = parseInt(cards[0]) + totalValue;
 
   //loop over all cards and convert to totalValue
     //TODO: convert string values into number
