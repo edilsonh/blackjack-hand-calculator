@@ -4,13 +4,14 @@
 
   // Assert Function
   function assert(hand, value) {
+    
     let output = handValue(hand);
     console.assert(output === value, `Expecting ${output} to be ${value}`);
   }
 
   // Blackjack Hand Tests
   // Hand, Value
-  assert(["2",], 2);
+  assert(["2", "3"], 5);
   assert(["2", "2", "K"], 14);
   assert(["2", "Q"], 12);
   assert(["7", "J"], 17);

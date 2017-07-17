@@ -13,14 +13,25 @@
 // cards #=> ["2"]
 function handValue (cards) {
   let totalValue = 0;
-  totalValue = parseInt(cards[0]) + totalValue;
+
+  for (let i = 0; i < cards.length; i++){
+    if(cards[i] === "K" || cards[i] === "Q" || cards[i] === "J") {
+      cards[i] = 10;
+    } else if(cards[i] === "A") {
+      cards[i] = 11;
+    }
+    totalValue = parseInt(cards[i]) + totalValue;
+      if(totalValue > 21){
+        totalValue = totalValue - 10;
+      }
+  }
+  return totalValue;
 
   //loop over all cards and convert to totalValue
     //TODO: convert string values into number
     //TODO: add numerical value to totalValue
 
 
-  return totalValue;
 }
 
 
